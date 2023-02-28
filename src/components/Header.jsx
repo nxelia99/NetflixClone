@@ -8,17 +8,17 @@ export default function Header(props) {
 
 
   return (
-    <Container>
+    <StyledHeader className='flex a-center j-between'>
         <div className="logo"><img src={logo} alt="logo" /></div>
         <button onClick={() => navigate(props.login ? "/login" : "/signup")}>
             {props.login ? "Log In" : "Sign Up"}
         </button>
             
-    </Container>
+    </StyledHeader>
   )
 }
 
-const Container = styled.div`
+const StyledHeader = styled.header`
     padding: 0 4rem;
     .logo{
         img{
