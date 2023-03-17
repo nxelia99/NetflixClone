@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {getAuth} from "firebase/firebase-auth";
+import { getAuth, onAuthStateChanged, getRedirectResult } from 'firebase/auth';
 const firebaseConfig = {
   apiKey: "AIzaSyDnFS5HNuUT0vZvKz9E1HhW9kzeUKUQKII",
   authDomain: "react-netflix-clone-ad653.firebaseapp.com",
@@ -15,5 +15,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
 
 export const firebaseAuth = getAuth(app);
