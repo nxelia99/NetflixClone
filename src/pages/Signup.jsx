@@ -45,17 +45,17 @@ export default function Signup() {
                 </div>
                 <div className="form">
                 <input
-              type="email"
-              placeholder="Email address"
-              onChange={(e) =>
-                setFormValues({
-                  ...formValues,
-                  [e.target.name]: e.target.value,
-                })
-              }
-              name="email"
-              value={formValues.email}
-            />
+                  type="email"
+                  placeholder="Email address"
+                  onChange={(e) =>
+                    setFormValues({
+                      ...formValues,
+                      [e.target.name]: e.target.value,
+                    })
+                  }
+                  name="email"
+                  value={formValues.email}
+                />
             {showPassword && (
               <input
                 type="password"
